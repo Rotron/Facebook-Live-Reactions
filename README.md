@@ -50,7 +50,10 @@ Rename the download to `audio.mp3`
 This will download the `.mp3` of the video. In this case it's a playlist of classic 1920's and 1930's Christmas songs.
 
 The audio file above is 20 minutes long. It needs to be looped so it's at least 4 hours in length. Lets use [SoX](http://sox.sourceforge.net/) to loop the audio file.
-
+    Install libsox-fmt-mp3:
+    
+    sudo apt-get insall sox
+    sudo apt-get install libsox-fmt-mp3
     sox audio.mp3 audio-loop.mp3 repeat 15
 
 This will take a while to run. Once complete a single `audio-loop.mp3` file will be produced. Copy `audio-loop.mp3` to the `data` directory.
